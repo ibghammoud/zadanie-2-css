@@ -1,0 +1,300 @@
+
+/* Задание № 2. Оформление страниц с помощью CSS */
+
+/* 1. Общие настройки */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #242424;
+    background-color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 2. Независимые классы для текста */
+
+.font-small {
+    font-size: 0.875rem;
+}
+
+.font-large {
+    font-size: 1.25rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* 3. Основная структура страниц */
+
+.page-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(170px, 17%);
+    min-height: 100vh;
+}
+
+.page-content {
+    min-width: 0;
+    padding: 22px 28px 50px;
+}
+
+/* 4. Декоративная боковая панель */
+
+.side-panel {
+    min-height: 100vh;
+    padding: 140px 14px 24px;
+
+    background-color: #c4a16a;
+
+    background-image:
+        radial-gradient(
+            ellipse at 30% 15%,
+            rgba(255, 239, 185, 0.75),
+            transparent 48%
+        ),
+        radial-gradient(
+            ellipse at 80% 65%,
+            rgba(101, 61, 24, 0.35),
+            transparent 45%
+        ),
+        repeating-linear-gradient(
+            105deg,
+            rgba(97, 60, 26, 0.09) 0px,
+            transparent 4px,
+            rgba(255, 248, 214, 0.08) 9px,
+            transparent 19px
+        ),
+        linear-gradient(
+            90deg,
+            #9f733e 0%,
+            #e7c48a 36%,
+            #cfaa70 70%,
+            #99682f 100%
+        );
+
+    box-shadow:
+        inset 9px 0 17px rgba(67, 44, 18, 0.28);
+}
+
+.side-title {
+    margin: 0;
+    font-size: clamp(1.6rem, 3vw, 2.8rem);
+    color: #32266e;
+    text-shadow: 2px 2px 3px rgba(44, 31, 70, 0.28);
+}
+
+/* 5. Заголовки */
+
+.page-title {
+    width: fit-content;
+    max-width: 100%;
+    margin: 4px auto 26px;
+    padding: 10px 8px;
+
+    position: relative;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    line-height: 1.2;
+}
+
+.page-title::before,
+.page-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 75px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+
+.page-title::before {
+    top: 0;
+    background-color: #d4a574;
+}
+
+.page-title::after {
+    bottom: 0;
+    background-color: #218e88;
+}
+
+/* 6. Первая страница */
+
+.page-home .page-title {
+    color: #218e88;
+    text-shadow: 1px 2px 2px rgba(33, 142, 136, 0.15);
+}
+
+.intro-copy p {
+    margin: 0 0 10px;
+}
+
+.feature-section {
+    margin-top: 90px;
+}
+
+.feature-section > p {
+    margin: 0 0 22px;
+}
+
+.media-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.feature-image {
+    display: block;
+    width: min(300px, 40%);
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.media-row p {
+    flex: 1;
+    margin: 0 0 8px;
+}
+
+.navigation-link {
+    margin-top: 30px;
+}
+
+.navigation-link a {
+    color: #782f89;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.navigation-link a:hover,
+.navigation-link a:focus-visible {
+    color: #218e88;
+}
+
+/* 7. Вторая страница */
+
+.page-second .page-title {
+    color: #312570;
+    text-shadow: 1px 2px 3px rgba(41, 31, 101, 0.18);
+}
+
+.page-second .page-content > p:first-of-type {
+    margin: 5px 0 22px;
+}
+
+.table-wrap {
+    width: max-content;
+    max-width: 100%;
+    overflow-x: auto;
+    border-top: 6px solid #146e6d;
+    border-bottom: 5px solid #873080;
+}
+
+.cat-table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.cat-table td {
+    border: 1px solid #b9b9b9;
+    padding: 4px 6px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.cat-table img {
+    display: block;
+    width: 420px;
+    max-width: none;
+    height: auto;
+}
+
+.secondary-title {
+    margin: 25px 0 22px;
+    color: #218e88;
+    font-size: 1.5rem;
+}
+
+.details-list {
+    padding-left: 35px;
+    margin: 20px 0;
+    list-style-type: lower-alpha;
+}
+
+.details-list > li {
+    margin-bottom: 5px;
+}
+
+.nested-list {
+    padding-left: 25px;
+    list-style-type: square;
+}
+
+.nested-list li {
+    margin-bottom: 3px;
+}
+
+/* 8. Адаптация для небольших экранов */
+
+@media (max-width: 760px) {
+
+    .page-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .page-content {
+        padding: 18px 16px 32px;
+    }
+
+    .side-panel {
+        min-height: 110px;
+        padding: 25px 12px;
+        text-align: center;
+    }
+
+    .feature-section {
+        margin-top: 42px;
+    }
+
+    .media-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .feature-image {
+        width: min(300px, 85%);
+    }
+
+    .media-row p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .cat-table img {
+        width: 320px;
+    }
+
+    .font-small {
+        font-size: 0.875rem;
+    }
+}

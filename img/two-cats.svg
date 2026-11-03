@@ -1,0 +1,32 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430">
+  <rect width="720" height="430" fill="#141414"/>
+
+  <path d="M167 350 C75 335 102 230 147 230" fill="none" stroke="#eeeae7" stroke-width="27" stroke-linecap="round"/>
+  <ellipse cx="287" cy="303" rx="101" ry="115" fill="#eeeae7"/>
+  <path d="M203 198 L204 83 L261 135 Q292 116 321 135 L379 83 L376 198 Q365 257 290 267 Q216 258 203 198Z" fill="#f1eee9" stroke="#9c9c9c" stroke-width="6"/>
+  <path d="M210 96 L219 149 L250 133Z M370 96 L361 149 L330 133Z" fill="#d7a6ac"/>
+  <ellipse cx="255" cy="192" rx="12" ry="17" fill="#3b8a79"/>
+  <ellipse cx="325" cy="192" rx="12" ry="17" fill="#3b8a79"/>
+  <circle cx="255" cy="192" r="5" fill="#1d2425"/>
+  <circle cx="325" cy="192" r="5" fill="#1d2425"/>
+  <path d="M279 218 L301 218 L290 230Z" fill="#d98c92"/>
+  <path d="M290 230 Q277 245 265 234 M290 230 Q303 245 315 234" stroke="#666" fill="none" stroke-width="4"/>
+  <path d="M249 226 L197 219 M249 237 L191 243 M331 226 L383 219 M331 237 L389 243" stroke="#aaa" stroke-width="3"/>
+  <ellipse cx="246" cy="389" rx="37" ry="21" fill="#f1eee9"/>
+  <ellipse cx="331" cy="389" rx="37" ry="21" fill="#f1eee9"/>
+
+  <path d="M580 350 C676 334 641 230 599 230" fill="none" stroke="#3d4148" stroke-width="27" stroke-linecap="round"/>
+  <ellipse cx="481" cy="303" rx="101" ry="115" fill="#42464f"/>
+  <path d="M397 198 L399 83 L454 135 Q483 116 513 135 L570 83 L568 198 Q557 257 483 267 Q410 258 397 198Z" fill="#484c55" stroke="#26282d" stroke-width="6"/>
+  <path d="M407 96 L415 149 L445 133Z M562 96 L553 149 L523 133Z" fill="#8b677b"/>
+  <ellipse cx="447" cy="192" rx="12" ry="17" fill="#c6dd6e"/>
+  <ellipse cx="519" cy="192" rx="12" ry="17" fill="#c6dd6e"/>
+  <circle cx="447" cy="192" r="5" fill="#131313"/>
+  <circle cx="519" cy="192" r="5" fill="#131313"/>
+  <path d="M472 218 L494 218 L483 230Z" fill="#ca8a91"/>
+  <path d="M483 230 Q470 245 458 234 M483 230 Q496 245 508 234" stroke="#c2c2c2" fill="none" stroke-width="4"/>
+  <path d="M442 226 L390 219 M442 237 L384 243 M524 226 L576 219 M524 237 L582 243" stroke="#999" stroke-width="3"/>
+  <ellipse cx="439" cy="389" rx="37" ry="21" fill="#454953"/>
+  <ellipse cx="527" cy="389" rx="37" ry="21" fill="#454953"/>
+</svg>
